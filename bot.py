@@ -13,9 +13,7 @@ bot=telebot.TeleBot(os.environ['TELEGRAM_TOKEN'])
 
 @bot.message_handler()
 def handl(m):
-   labeledprice1={'label':'labelebat',
-                  'amount':222
-                 }
+   labeledprice1=labeled_price('За хуй в рот',999)
    bot.send_invoice(m.chat.id, 'Покупай хуету!','Описание к хуете','payload1', '4242 4242 4242 4242','startparametr','RUB',[labeledprice1])
 
 if True:
