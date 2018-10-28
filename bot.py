@@ -21,7 +21,7 @@ def handl(m):
                     currency="RUB",prices=prices1)
    
 
-@bot.pre_checkout_query_handler()
+@bot.pre_checkout_query_handler(func=lambda)
 def handlcheckout(c):
    if c.ok==True:
       bot.send_message(441399484,'ok')
