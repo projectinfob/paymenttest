@@ -23,11 +23,7 @@ def handl(m):
 
 @bot.pre_checkout_query_handler(func=lambda call: True)
 def handlcheckout(c):
-   print(c)
-   if c.ok==True:
-      bot.send_message(441399484,'ok')
-   else:
-      bot.send_message(441399484,'false')
+   x=bot.answer_pre_checkout_query()
    
 
 if True:
