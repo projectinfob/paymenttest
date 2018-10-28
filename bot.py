@@ -15,8 +15,8 @@ bot=telebot.TeleBot(os.environ['TELEGRAM_TOKEN'])
 
 @bot.message_handler()
 def handl(m):
-   prices1=[LabeledPrice(label='За хуй в рот',amount=10000),LabeledPrice(label='За доставку на дом',amount=35000)]
-   bot.send_invoice(chat_id=m.chat.id, title='Покупай хуй в рот!',description='Хуй большой и сочный',is_flexible=False,\
+   prices1=[LabeledPrice(label='Тест',amount=10000),LabeledPrice(label='За доставку на дом',amount=35000)]
+   bot.send_invoice(chat_id=m.chat.id, title='Покупай!',description='Покупка тест',is_flexible=False,\
                     invoice_payload='payload',provider_token='381764678:TEST:7232',start_parameter='startp',\
                     currency="RUB",prices=prices1)
 
