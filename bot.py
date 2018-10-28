@@ -23,7 +23,7 @@ def handl(m):
 
 @bot.pre_checkout_query_handler(func=lambda call: True)
 def handlcheckout(c):
-   if random.randint(-1,0)==1:
+   if random.randint(0,1)==1:
       x=bot.answer_pre_checkout_query(c.id,True)
    else:
       x=bot.answer_pre_checkout_query(c.id,False, 'Неудача. Не знаю, почему.')
