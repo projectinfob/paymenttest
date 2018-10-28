@@ -23,7 +23,7 @@ def handl(m):
 
 @bot.pre_checkout_query_handler(func=lambda call: True)
 def handlcheckout(c):
-   x=bot.answer_pre_checkout_query()
+   x=bot.answer_pre_checkout_query(c.id,True)
    
 
 if True:
