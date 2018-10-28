@@ -18,7 +18,7 @@ def handl(m):
    prices1=[LabeledPrice(label='За хуй в рот',amount=145)]#,LabeledPrice(label='За доставку на дом',amount=350)]
    bot.send_invoice(chat_id=m.chat.id, title='Покупай хуй в рот!',description='Описание к хую',is_flexible=False,\
                     invoice_payload='payload',provider_token='381764678:TEST:7232',start_parameter='startp',\
-                    currency="eur",prices=prices1)
+                    currency="EUR",prices=prices1)
 
 if True:
    print('bot is working')
