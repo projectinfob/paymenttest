@@ -5,6 +5,8 @@ import time
 import telebot
 import random
 from telebot import types
+from telebot.types import LabeledPrice
+from telebot.types import ShippingOption
 from pymongo import MongoClient
 import threading
 
