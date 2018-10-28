@@ -26,7 +26,7 @@ def handlcheckout(c):
    if random.randint(-1,0)==1:
       x=bot.answer_pre_checkout_query(c.id,True)
    else:
-      x=bot.answer_pre_checkout_query(c.id,False)
+      x=bot.answer_pre_checkout_query(c.id,False, 'Неудача. Не знаю, почему.')
    
 
 if True:
