@@ -19,6 +19,15 @@ def handl(m):
    bot.send_invoice(chat_id=m.chat.id, title='Покупай!',description='Покупка тест',is_flexible=False,\
                     invoice_payload='payload',provider_token='381764678:TEST:7232',start_parameter='startp',\
                     currency="RUB",prices=prices1)
+   
+
+@bot.pre_checkout_query_handler()
+def handlcheckout(c):
+   if c.ok==True:
+      bot.send_message(441399484,'ok')
+   else:
+      bot.send_message(441399484,'false')
+   
 
 if True:
    print('bot is working')
